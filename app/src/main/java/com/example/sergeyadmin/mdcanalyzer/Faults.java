@@ -25,9 +25,9 @@ public class Faults {
 
         if(in[0].equals("0")) {
             if(in[1].equals("0")) sdi_result="SDI code:"+sdi[0];
-            else sdi_result= "SDI code:"+sdi[1];}
+            else sdi_result= "SDI code:"+sdi[2];}
         else {
-            if (in[1].equals("0")) sdi_result= "SDI code:"+sdi[2];
+            if (in[1].equals("0")) sdi_result= "SDI code:"+sdi[1];
             else sdi_result= "SDI code:"+sdi[3];}
         return sdi_result;
 
@@ -37,9 +37,9 @@ public class Faults {
 
         if(in[21].equals("0")) {
             if(in[22].equals("0")) ssm_result= "SSM code:"+ssm[0];
-            else ssm_result= "SSM code:"+ ssm[1];}
+            else ssm_result= "SSM code:"+ ssm[2];}
         else {
-            if (in[22].equals("0")) ssm_result= "SSM code:"+ ssm[2];
+            if (in[22].equals("0")) ssm_result= "SSM code:"+ ssm[1];
             else ssm_result= "SSM code:"+ ssm[3];}
         return ssm_result;
 

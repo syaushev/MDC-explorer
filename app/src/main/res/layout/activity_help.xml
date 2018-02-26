@@ -71,7 +71,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:textColor="@color/blue"
-            android:text="2. Enter the code from  \n LRY DIAGNOSTIC DATA display" />
+            android:text="2. Enter the code from  \n LRU DIAGNOSTIC DATA display" />
         <TextView
             android:id="@+id/textView8"
             android:layout_width="match_parent"
