@@ -68,6 +68,7 @@ public class FindActivity extends AppCompatActivity {
         APU351 APU351=new APU351();
         APU352 APU352=new APU352();
         ADC350 ADC350=new ADC350();
+        ADC351 ADC351=new ADC351();
         BTMS350 BTMS350=new BTMS350();
         CDU354 CDU354=new CDU354();
         CFSS351 CFSS351=new CFSS351();
@@ -182,6 +183,19 @@ public class FindActivity extends AppCompatActivity {
 
                 builder.append(ADC350.checkSDI(inputcode,ADC350.sdi,ADC350.ssm)+ "\n");
                 builder.append(ADC350.checkSSM(inputcode,ADC350.sdi,ADC350.ssm)+ "\n");
+
+                out.setText(builder.toString());
+                break;
+            case "ADC351":
+
+
+                for(int i=0; i< ADC351.getFaults(inputcode).size();i++) {
+
+                    builder.append(ADC351.getFaults(inputcode).get(i)+ "\n");}
+                builder.append("______________"+ "\n");
+
+                builder.append(ADC351.checkSDI(inputcode,ADC351.sdi,ADC351.ssm)+ "\n");
+                builder.append(ADC351.checkSSM(inputcode,ADC351.sdi,ADC351.ssm)+ "\n");
 
                 out.setText(builder.toString());
                 break;

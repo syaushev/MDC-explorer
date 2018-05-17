@@ -92,6 +92,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     final int PSEU273= 65;
     final int FQGS277= 66;
     final int MFD351= 67;
+    final int ADC351=68;
 
 
 
@@ -181,6 +182,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         menu.add(0,ACFC350,1,"ACFC(350)");
         menu.add(0,ACFC351,1,"ACFC (351)");
         menu.add(0,ADC350,1,"ADC (350)");
+        menu.add(0,ADC351,1,"ADC (351)");
         menu.add(0,ADF350,1,"ADF (350)");
         menu.add(0,AHRS350,1,"AHRS (350)");
         menu.add(0,AHRS351,1,"AHRS (351)");
@@ -259,6 +261,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case ACFC350:systemname.setText("ACFC350");break;
             case ACFC351:systemname.setText("ACFC351");break;
             case ADC350:systemname.setText("ADC350");break;
+            case ADC351:systemname.setText("ADC351");break;
             case ADF350:systemname.setText("ADF350");break;
             case AHRS350:systemname.setText("AHRS350");break;
             case AHRS351:systemname.setText("AHRS351");break;
