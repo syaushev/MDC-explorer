@@ -1,3 +1,26 @@
 <resources>
-    <string name="app_name">MDC explorer</string>
+    <string name="app_name">MDCa</string>
+    <string name="title">MDC analyzer</string>
+    <string name="advice_text">
+        PLEASE, \n
+        CHOOSE THE SYSTEM \n
+        by holding the name</string>
+    <string name="help_text">
+        ENTER MDC CODE \n
+        AND PUSH «FIND </string>
+    <string name="find_text">FIND</string>
+    <string name="ver_text">MDC Analyzer ver.1.0</string>
+    <string name="author_text">
+        created by Sergey T. Yaushev \n
+        yaushev.s.t@gmail.com</string>
+    <string name="note_text">NOTE!</string>
+    <string name="note_text2">This application is created for training only! Please! Don\'t use it for maintenance!</string>
+    <string name="help_text2">How to use this app:</string>
+    <string name="help_text3">1. Choose the system by holding the name (e.g. AHRS352)</string>
+    <string name="help_text4">2. Enter the code from  LRU DIAGNOSTIC DATA display</string>
+    <string name="help_text5">3. Push FIND button</string>
+    <string name="toast_string">You should enter 24 digits</string>
+    <string name="toast_string2">You do not enter the code</string>
+    <string name="type_button">BIN/HEX</string>
+
 </resources>

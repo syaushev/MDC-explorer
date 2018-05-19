@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MDCa</string>
+    <string name="title">MDC analyzer</string>
+    <string name="advice_text">Выберите ситему, удерживая название</string>
+    <string name="help_text">Введите код MDC и нажмите "FIND" </string>
+    <string name="find_text">FIND</string>
+    <string name="ver_text">MDC Analyzer ver.1.0</string>
+    <string name="author_text">
+        автор: Яушев Сергей \n
+        yaushev.s.t@gmail.com</string>
+    <string name="note_text">ВНИМАНИЕ!</string>
+    <string name="note_text2">Данное приложение создано только в учебных целях! Не используйте данное приложение для реального технического облуживания ВС!</string>
+    <string name="help_text2">Чтобы найти расшифровку кода, \nвыполите следующее:</string>
+    <string name="help_text3">1. Выберите систему, удерживая ее название  (например AHRS352)</string>
+    <string name="help_text4">2. Введите код, полученный с MDC</string>
+    <string name="help_text5">3. Нажмите кнопку "ПОИСК"</string>
+    <string name="toast_string">Вы должны ввести все 24 цифры!</string>
+    <string name="toast_string2">Вы не ввели ни одного символа!</string>
+    <string name="type_button">BIN/HEX</string>
+</resources>

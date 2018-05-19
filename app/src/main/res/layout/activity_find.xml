@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context="com.example.sergeyadmin.mdcanalyzer.FindActivity">
+    tools:context="com.yaushev.st.mdcanalyzer.FindActivity">
 
     <ScrollView
         android:layout_width="match_parent"

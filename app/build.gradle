@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "com.example.sergeyadmin.mdcanalyzer"
+        applicationId "com.yaushev.st.mdcanalyzer"
         minSdkVersion 21
         targetSdkVersion 26
         versionCode 1

@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context="com.example.sergeyadmin.mdcanalyzer.MainActivity">
+    tools:context="com.yaushev.st.mdcanalyzer.MainActivity">
 
 
     <LinearLayout
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="260dp"
+        android:layout_marginBottom="190dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="120dp"
@@ -27,6 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="240dp"
+            android:layout_marginTop="25dp"
 
 
             android:layout_weight="5"
@@ -46,7 +47,7 @@
             android:layout_marginBottom="20dp"
             android:layout_marginTop="40dp"
             android:fontFamily="sans-serif"
-            android:text="MDC EXPLORER"
+            android:text="@string/title"
             android:textAlignment="center"
             android:textColor="@color/blue"
             android:textSize="24sp"
@@ -57,9 +58,9 @@
             android:id="@+id/text1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
             android:layout_marginBottom="20dp"
-            android:text="PLEASE, \n CHOOSE THE SYSTEM \n by holding the name"
+            android:ems="10"
+            android:text="@string/advice_text"
             android:textAlignment="center"
             android:textColor="@color/blue"
             android:textSize="10sp"
@@ -70,8 +71,8 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="AHRS350"
             android:layout_marginBottom="20dp"
+            android:text="AHRS350"
             android:textAlignment="center"
             android:textColor="@color/pink"
             android:textSize="24sp"
@@ -83,14 +84,45 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:ems="10"
+            android:layout_weight="5"
 
-            android:text="ENTER MDC CODE \nAND PUSH «FIND »"
+            android:ems="10"
+            android:text="@string/help_text"
             android:textAlignment="center"
             android:textColor="@color/blue"
             android:textSize="10sp"
             tools:layout_editor_absoluteX="132dp"
             tools:layout_editor_absoluteY="237dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/emptytext"
+                android:layout_width="407dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/type_button"
+
+                android:textAlignment="center"
+                android:textColor="@color/pink"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="372dp" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -107,7 +139,7 @@
                 android:digits="0,1"
                 android:drawableBottom="@drawable/line"
                 android:ems="10"
-                android:hint="Code"
+                android:hint="Code BIN"
                 android:inputType="numberDecimal"
                 android:maxLength="29"
                 android:maxLines="1"
@@ -132,13 +164,59 @@
                 android:textSize="8dp"
                 tools:layout_editor_absoluteX="285dp"
                 tools:layout_editor_absoluteY="313dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editText1"
+                style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:drawableBottom="@drawable/line"
+                android:ems="10"
+                android:hint="Code HEX"
+                android:digits="0123456789ABCDEF"
+                android:inputType="textCapCharacters"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:selectAllOnFocus="false"
+                android:singleLine="true"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/bluehints"
+                android:textSize="32sp"
+
+                tools:layout_editor_absoluteX="51dp"
+                tools:layout_editor_absoluteY="288dp" />
+
+            <ImageButton
+                android:id="@+id/button31"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginTop="15dp"
+
+                android:layout_weight="6"
+                android:backgroundTint="@android:color/background_dark"
+                android:src="@drawable/ic_action_back"
+                android:textSize="8dp"
+                tools:layout_editor_absoluteX="285dp"
+                tools:layout_editor_absoluteY="313dp" />
+
         </LinearLayout>
 
         <TextView
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="FIND"
+            android:text="@string/find_text"
             android:textAlignment="center"
             android:textColor="@color/pink"
             android:textSize="24sp"
