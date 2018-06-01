@@ -102,11 +102,22 @@
             android:orientation="horizontal">
 
 
+            <ImageButton
+                android:id="@+id/link"
+                android:layout_width="235dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/background_dark"
+                app:srcCompat="@mipmap/link" />
+
             <TextView
-                android:id="@+id/emptytext"
-                android:layout_width="407dp"
+                android:id="@+id/linktoPDF"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textSize="8sp"
+                android:text="@string/linkButton"
+                android:textColor="@color/blue" />
 
             <TextView
                 android:id="@+id/button5"

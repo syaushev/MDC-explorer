@@ -9,7 +9,7 @@
         ENTER MDC CODE \n
         AND PUSH «FIND </string>
     <string name="find_text">FIND</string>
-    <string name="ver_text">MDC Analyzer ver.1.0</string>
+    <string name="ver_text">MDC Analyzer ver.1.2</string>
     <string name="author_text">
         created by Sergey T. Yaushev \n
         yaushev.s.t@gmail.com</string>
@@ -22,5 +22,6 @@
     <string name="toast_string">You should enter 24 digits</string>
     <string name="toast_string2">You do not enter the code</string>
     <string name="type_button">BIN/HEX</string>
+    <string name="linkButton">AMM 45-45-00-01</string>
 
 </resources>

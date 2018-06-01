@@ -1,11 +1,17 @@
 package com.yaushev.st.mdcanalyzer;
 
 
+import android.content.ActivityNotFoundException;
+import android.content.Context;
 import android.content.Intent;
+import android.content.res.AssetManager;
+import android.net.Uri;
+import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.MenuItem;
 import android.view.View;
@@ -13,6 +19,12 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -23,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView type_button;
     TextView findbuttton;
     ImageButton clear;
+    ImageButton link;
     TextView systemname;
     ImageButton help;
 
@@ -99,15 +112,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     final int VHFNAV350=70;
     final int WXP270=71;
     final int WXR354=72;
+    private String TAG="exeption";
 
 
-
-
-
-   @Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        link=(ImageButton) findViewById(R.id.link);
+        link.setOnClickListener(this);
 
 
 
@@ -165,6 +179,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         }
     };
+
 
     @Override
     public void onClick(View v) {
@@ -233,12 +248,38 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
             case R.id.button31:
                 editText2.setText("");
+
+                break;
+            case R.id.link:
+
+                File file = new File("/sdcard/AMM45-45-00-01.pdf");
+                if (file.exists()) {
+                    Uri path = Uri.fromFile(file);
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setDataAndType(path, "application/pdf");
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+                    try {
+                        startActivity(intent);
+                    }
+                    catch (ActivityNotFoundException e) {
+                        Toast.makeText(MainActivity.this,
+                                "No Application Available to View PDF",
+                                Toast.LENGTH_SHORT).show();
+                    }
+                }
+
+
+
+
                 break;
 
 
         }
 
     }
+
+
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
