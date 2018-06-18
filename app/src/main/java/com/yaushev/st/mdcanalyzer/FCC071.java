@@ -63,12 +63,12 @@ public class FCC071 extends Faults {
         }
         //Status code
 
-        if((in[8].equals("0")&&in[7].equals("0")&&(in[6].equals("0"))&&(in[5].equals("1")))) results.add("Status code:"+statusCode[0]);
-        else if((in[8].equals("0")&&in[7].equals("0")&&(in[6].equals("1"))&&(in[5].equals("0")))) results.add("Status code:"+statusCode[1]);
-        else if((in[8].equals("0")&&in[7].equals("0")&&(in[6].equals("1"))&&(in[5].equals("1")))) results.add("Status code:"+statusCode[2]);
-        else if((in[8].equals("0")&&in[7].equals("1")&&(in[6].equals("0"))&&(in[5].equals("0")))) results.add("Status code:"+statusCode[3]);
-        else if((in[8].equals("0")&&in[7].equals("1")&&(in[6].equals("0"))&&(in[5].equals("1")))) results.add("Status code:"+statusCode[4]);
-        else if((in[8].equals("0")&&in[7].equals("1")&&(in[6].equals("1"))&&(in[5].equals("0")))) results.add("Status code:"+statusCode[5]);
+        if((in[8].equals("0")&&in[7].equals("0")&&(in[6].equals("0"))&&(in[5].equals("1")))) results.add("----\nGo to FCC351:"+statusCode[0]+"\n----");
+        else if((in[8].equals("0")&&in[7].equals("0")&&(in[6].equals("1"))&&(in[5].equals("0")))) results.add("----\nGo to FCC351:"+statusCode[1]+"\n----");
+        else if((in[8].equals("0")&&in[7].equals("0")&&(in[6].equals("1"))&&(in[5].equals("1")))) results.add("----\nGo to FCC351:"+statusCode[2]+"\n----");
+        else if((in[8].equals("0")&&in[7].equals("1")&&(in[6].equals("0"))&&(in[5].equals("0")))) results.add("----\nGo to FCC351:"+statusCode[3]+"\n----");
+        else if((in[8].equals("0")&&in[7].equals("1")&&(in[6].equals("0"))&&(in[5].equals("1")))) results.add("----\nGo to FCC351:"+statusCode[4]+"\n----");
+        else if((in[8].equals("0")&&in[7].equals("1")&&(in[6].equals("1"))&&(in[5].equals("0")))) results.add("----\nGo to FCC351:"+statusCode[5]+"\n----");
         else if((in[8].equals("0")&&in[7].equals("1")&&(in[6].equals("1"))&&(in[5].equals("1")))) results.add("Status code:"+statusCode[6]);
 
         else results.add("Status code:entered code isn't existing");
