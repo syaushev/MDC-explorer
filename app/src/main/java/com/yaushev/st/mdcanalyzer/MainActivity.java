@@ -112,6 +112,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     final int VHFNAV350=70;
     final int WXP270=71;
     final int WXR354=72;
+    final int FCC071=73;
     private String TAG="exeption";
 
 
@@ -369,6 +370,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         menu.add(0,VHFNAV350,70,"VHF NAV (350)");
         menu.add(0,WXP270,71,"WXP (270)");
         menu.add(0,WXR354,72,"WXR (354)");
+        menu.add(0,FCC071,73,"FCC (071)");
 
 
 
@@ -454,6 +456,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case VHFNAV350:systemname.setText("VHFNAV350");break;
             case WXP270:systemname.setText("WXP270");break;
             case WXR354:systemname.setText("WXR354");break;
+            case FCC071:systemname.setText("FCC071");break;
 
 
         }

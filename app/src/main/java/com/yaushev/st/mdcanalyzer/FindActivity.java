@@ -131,6 +131,7 @@ public class FindActivity extends AppCompatActivity {
         VHFNAV350 VHFNAV350=new VHFNAV350();
         WXP270 WXP270=new WXP270();
         WXR354 WXR354=new WXR354();
+        FCC071 FCC071=new FCC071();
 
 
 
@@ -465,6 +466,7 @@ public class FindActivity extends AppCompatActivity {
             case "FQGS277":     for(int i=0; i< FQGS277.getFaults(inputcode,FQGS277.systemcode).size();i++) { builder.append(FQGS277.getFaults(inputcode,FQGS277.systemcode).get(i)+ "\n");}builder.append("______________"+ "\n"); builder.append(FQGS277.checkSDI(inputcode,FQGS277.sdi,FQGS277.ssm)+ "\n");builder.append(FQGS277.checkSSM(inputcode,  FQGS277.sdi,FQGS277.ssm)+ "\n"); out.setText(builder.toString());break;
             case "DCU350":     for(int i=0; i< DCU350.getFaults(inputcode,DCU350.systemcode).size();i++) { builder.append(DCU350.getFaults(inputcode,DCU350.systemcode).get(i)+ "\n");}builder.append("______________"+ "\n"); builder.append(DCU350.checkSDI(inputcode,DCU350.sdi,DCU350.ssm)+ "\n");builder.append(DCU350.checkSSM(inputcode,  DCU350.sdi,DCU350.ssm)+ "\n"); out.setText(builder.toString());break;
             case "MFD351":     for(int i=0; i< MFD351.getFaults(inputcode,MFD351.systemcode).size();i++) { builder.append(MFD351.getFaults(inputcode,MFD351.systemcode).get(i)+ "\n");}builder.append("______________"+ "\n"); builder.append(MFD351.checkSDI(inputcode,MFD351.sdi,MFD351.ssm)+ "\n");builder.append(MFD351.checkSSM(inputcode,  MFD351.sdi,MFD351.ssm)+ "\n"); out.setText(builder.toString());break;
+            case "FCC071":     for(int i=0; i< FCC071.getFaults(inputcode,FCC071.systemcode).size();i++) { builder.append(FCC071.getFaults(inputcode,FCC071.systemcode).get(i)+ "\n");}builder.append("______________"+ "\n"); builder.append(FCC071.checkSDI(inputcode,FCC071.sdi,FCC071.ssm)+ "\n");builder.append(FCC071.checkSSM(inputcode,  FCC071.sdi,FCC071.ssm)+ "\n"); out.setText(builder.toString());break;
             //case "":     for(int i=0; i< .getFaults(inputcode,.systemcode).size();i++) { builder.append(.getFaults(inputcode,.systemcode).get(i)+ "\n");}builder.append("______________"+ "\n"); builder.append(.checkSDI(inputcode,.sdi,.ssm)+ "\n");builder.append(.checkSSM(inputcode,  .sdi,.ssm)+ "\n"); out.setText(builder.toString());break;
 
 
