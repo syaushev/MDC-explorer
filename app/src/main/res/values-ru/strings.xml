@@ -9,7 +9,7 @@
         автор: Яушев Сергей \n
         yaushev.s.t@gmail.com</string>
     <string name="note_text">ВНИМАНИЕ!</string>
-    <string name="note_text2">Данное приложение создано только в учебных целях! Не используйте данное приложение для реального технического облуживания ВС!</string>
+    <string name="note_text2">Данное приложение создано только в учебных целях! Не используйте данное приложение для реального технического облуживания ВС! \nПеред использованием скопируйте актульный файл AMM45-45-00-01.pdf в корневой каталог вашего телефона!</string>
     <string name="help_text2">Чтобы найти расшифровку кода, \nвыполите следующее:</string>
     <string name="help_text3">1. Выберите систему, удерживая ее название  (например AHRS352)</string>
     <string name="help_text4">2. Введите код, полученный с MDC</string>
@@ -18,4 +18,5 @@
     <string name="toast_string2">Вы не ввели ни одного символа!</string>
     <string name="type_button">BIN/HEX</string>
     <string name="linkButton">AMM 45-45-00-01</string>
+    <string name="filenotexist">Файл не найден. \nСкопируйте AMM45-45-00-01.pdf в корневую папку вашего телефона.</string>
 </resources>

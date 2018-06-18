@@ -14,6 +14,7 @@ import android.text.TextWatcher;
 import android.util.Log;
 import android.view.ContextMenu;
 import android.view.MenuItem;
+import android.view.SubMenu;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -276,6 +277,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                 "No Application Available to View PDF",
                                 Toast.LENGTH_SHORT).show();
                     }
+                } else {
+                    String fileNotExistString= (String) getText(R.string.filenotexist);
+                    Toast.makeText(MainActivity.this,
+                            fileNotExistString,
+                            Toast.LENGTH_SHORT).show();
                 }
 
 
@@ -371,6 +377,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         menu.add(0,RCFRP351,65,"RCFRP (351)");
 
 
+
         menu.add(0,PSEU273,66,"PSEU (273)");
         menu.add(0,FQGS277,67,"FQGS (277)");
         menu.add(0,MFD351,68,"MFD (351)");
@@ -378,13 +385,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         menu.add(0,VHFNAV350,70,"VHF NAV (350)");
         menu.add(0,WXP270,71,"WXP (270)");
         menu.add(0,WXR354,72,"WXR (354)");
-        menu.add(0,FCC071,73,"FCC (071)");
-        menu.add(0,FCC351Repair,74,"FCC (351):Repair");
-        menu.add(0,FCC351ApEng,75,"FCC (351):AP ENG");
-        menu.add(0,FCC351ApDis,76,"FCC (351):AP DISENG");
-        menu.add(0,FCC351YdEng,77,"FCC (351):YD ENG");
-        menu.add(0,FCC351YdDis,78,"FCC (351):YD DISENG");
-        menu.add(0,FCC351Boost,79,"FCC (351):Boost");
+
+        SubMenu subMenu=menu.addSubMenu("FCC Diagnostic");
+
+        subMenu.add(0,FCC071,73,"FCC (071)");
+        subMenu.add(0,FCC351Repair,74,"FCC (351):Repair");
+        subMenu.add(0,FCC351ApEng,75,"FCC (351):AP ENG");
+        subMenu.add(0,FCC351ApDis,76,"FCC (351):AP DISENG");
+        subMenu.add(0,FCC351YdEng,77,"FCC (351):YD ENG");
+        subMenu.add(0,FCC351YdDis,78,"FCC (351):YD DISENG");
+        subMenu.add(0,FCC351Boost,79,"FCC (351):Boost");
 
 
 
