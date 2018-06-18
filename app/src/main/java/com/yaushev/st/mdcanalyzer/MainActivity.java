@@ -113,6 +113,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     final int WXP270=71;
     final int WXR354=72;
     final int FCC071=73;
+    final int FCC351Repair=74;
+    final int FCC351ApEng=75;
+    final int FCC351ApDis=76;
+    final int FCC351YdEng=77;
+    final int FCC351YdDis=78;
+    final int FCC351Boost=79;
+
+
     private String TAG="exeption";
 
 
@@ -371,6 +379,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         menu.add(0,WXP270,71,"WXP (270)");
         menu.add(0,WXR354,72,"WXR (354)");
         menu.add(0,FCC071,73,"FCC (071)");
+        menu.add(0,FCC351Repair,74,"FCC (351):Repair");
+        menu.add(0,FCC351ApEng,75,"FCC (351):AP ENG");
+        menu.add(0,FCC351ApDis,76,"FCC (351):AP DISENG");
+        menu.add(0,FCC351YdEng,77,"FCC (351):YD ENG");
+        menu.add(0,FCC351YdDis,78,"FCC (351):YD DISENG");
+        menu.add(0,FCC351Boost,79,"FCC (351):Boost");
+
 
 
 
@@ -457,6 +472,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case WXP270:systemname.setText("WXP270");break;
             case WXR354:systemname.setText("WXR354");break;
             case FCC071:systemname.setText("FCC071");break;
+            case FCC351Repair:systemname.setText("FCC351:Repair");break;
+            case FCC351ApEng:systemname.setText("FCC351:AP ENG");break;
+            case FCC351ApDis:systemname.setText("FCC351:AP DISENG");break;
+            case FCC351YdEng:systemname.setText("FCC351:YD ENG");break;
+            case FCC351YdDis:systemname.setText("FCC351:YD DISENG");break;
+            case FCC351Boost:systemname.setText("FCC351:Boost");break;
 
 
         }

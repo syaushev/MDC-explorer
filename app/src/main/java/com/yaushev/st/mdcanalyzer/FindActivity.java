@@ -132,6 +132,12 @@ public class FindActivity extends AppCompatActivity {
         WXP270 WXP270=new WXP270();
         WXR354 WXR354=new WXR354();
         FCC071 FCC071=new FCC071();
+        FCC351Repair FCC351Repair=new FCC351Repair();
+        FCC351ApDis FCC351ApDis=new FCC351ApDis();
+        FCC351ApEng FCC351ApEng=new FCC351ApEng();
+        FCC351Boost FCC351Boost=new FCC351Boost();
+        FCC351YdDis FCC351YdDis=new FCC351YdDis();
+        FCC351YdEng FCC351YdEng=new FCC351YdEng();
 
 
 
@@ -155,6 +161,52 @@ public class FindActivity extends AppCompatActivity {
 
 
         switch(systemname){
+            case "FCC351:Repair":
+
+                for(int i=0; i< FCC351Repair.getFaults(inputcode,FCC351Repair.systemcode).size();i++) {
+                    builder.append(FCC351Repair.getFaults(inputcode,FCC351Repair.systemcode).get(i)+ "\n");}
+
+
+
+                out.setText(builder.toString());
+                break;
+            case "FCC351:AP ENG":
+
+                for(int i=0; i< FCC351ApEng.getFaults(inputcode,FCC351ApEng.systemcode).size();i++) {
+                    builder.append(FCC351ApEng.getFaults(inputcode,FCC351ApEng.systemcode).get(i)+ "\n");}
+
+
+
+                out.setText(builder.toString());
+                break;
+            case "FCC351:AP DISENG":
+
+                for(int i=0; i< FCC351ApDis.getFaults(inputcode,FCC351ApDis.systemcode).size();i++) {
+                    builder.append(FCC351ApDis.getFaults(inputcode,FCC351ApDis.systemcode).get(i)+ "\n");}
+
+                out.setText(builder.toString());
+                break;
+            case "FCC351:YD ENG":
+
+                for(int i=0; i< FCC351YdEng.getFaults(inputcode,FCC351YdEng.systemcode).size();i++) {
+                    builder.append(FCC351YdEng.getFaults(inputcode,FCC351YdEng.systemcode).get(i)+ "\n");}
+
+                out.setText(builder.toString());
+                break;
+            case "FCC351:YD DISENG":
+
+                for(int i=0; i< FCC351YdDis.getFaults(inputcode,FCC351YdDis.systemcode).size();i++) {
+                    builder.append(FCC351YdDis.getFaults(inputcode,FCC351YdDis.systemcode).get(i)+ "\n");}
+
+                out.setText(builder.toString());
+                break;
+            case "FCC351:Boost":
+
+                for(int i=0; i< FCC351Boost.getFaults(inputcode,FCC351Boost.systemcode).size();i++) {
+                    builder.append(FCC351Boost.getFaults(inputcode,FCC351Boost.systemcode).get(i)+ "\n");}
+
+                out.setText(builder.toString());
+                break;
             case "ACFC350":
 
                 for(int i=0; i< ACFC350.getFaults(inputcode,ACFC350.systemcode).size();i++) {
