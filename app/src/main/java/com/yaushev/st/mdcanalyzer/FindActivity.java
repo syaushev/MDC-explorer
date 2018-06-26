@@ -138,6 +138,7 @@ public class FindActivity extends AppCompatActivity {
         FCC351Boost FCC351Boost=new FCC351Boost();
         FCC351YdDis FCC351YdDis=new FCC351YdDis();
         FCC351YdEng FCC351YdEng=new FCC351YdEng();
+        SteerByWireRTU SteerByWireRTU=new SteerByWireRTU();
 
 
 
@@ -207,7 +208,7 @@ public class FindActivity extends AppCompatActivity {
 
                 out.setText(builder.toString());
                 break;
-            case "ACFC350":
+            case "ACFP351":
 
                 for(int i=0; i< ACFC350.getFaults(inputcode,ACFC350.systemcode).size();i++) {
                     builder.append(ACFC350.getFaults(inputcode,ACFC350.systemcode).get(i)+ "\n");}
@@ -404,6 +405,18 @@ public class FindActivity extends AppCompatActivity {
 
                 builder.append(CDU354.checkSDI(inputcode,CDU354.sdi,CDU354.ssm)+ "\n");
                 builder.append(CDU354.checkSSM(inputcode,CDU354.sdi,CDU354.ssm)+ "\n");
+
+                out.setText(builder.toString());
+                break;
+            case "Steer By Wire RTU350":
+
+                for(int i=0; i< SteerByWireRTU.getFaults(inputcode,SteerByWireRTU.systemcode).size();i++) {
+
+                    builder.append(SteerByWireRTU.getFaults(inputcode,SteerByWireRTU.systemcode).get(i)+ "\n");}
+                builder.append("______________"+ "\n");
+
+                builder.append(SteerByWireRTU.checkSDI(inputcode,SteerByWireRTU.sdi,SteerByWireRTU.ssm)+ "\n");
+                builder.append(SteerByWireRTU.checkSSM(inputcode,SteerByWireRTU.sdi,SteerByWireRTU.ssm)+ "\n");
 
                 out.setText(builder.toString());
                 break;

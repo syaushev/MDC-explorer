@@ -9,7 +9,7 @@
         ENTER MDC CODE \n
         AND PUSH «FIND </string>
     <string name="find_text">FIND</string>
-    <string name="ver_text">MDC Analyzer ver.1.2</string>
+    <string name="ver_text">MDC Analyzer ver.1.4</string>
     <string name="author_text">
         created by Sergey T. Yaushev \n
         yaushev.s.t@gmail.com</string>

@@ -4,7 +4,7 @@
     <string name="advice_text">Выберите ситему, удерживая название</string>
     <string name="help_text">Введите код MDC и нажмите "FIND" </string>
     <string name="find_text">FIND</string>
-    <string name="ver_text">MDC Analyzer ver.1.2</string>
+
     <string name="author_text">
         автор: Яушев Сергей \n
         yaushev.s.t@gmail.com</string>
